@@ -1,7 +1,7 @@
 
 {% for question in all_q %}
 <li>
-    <a href="{% url 'vote:detail' question.id %}">
+    <a href="{% url 'vote:show_detail' question.id %}">
         {{question.q_text}}
     </a>
 </li>
